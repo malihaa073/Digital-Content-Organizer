@@ -7,7 +7,7 @@ In human development, technology combines techniques, devices, and information s
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/malihaa073/Digital-Content-Organizer/blob/master/DigitalContentOrganizer/signup.png?raw=true)
 
 
 ## Features
