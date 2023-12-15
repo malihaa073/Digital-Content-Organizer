@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Discover">
+   <children>
+      <TableView fx:id="table" layoutY="60.0" onMouseClicked="#mouse_click_event_handler" prefHeight="600.0" prefWidth="1040.0">
+        <columns>
+          <TableColumn fx:id="title_col" prefWidth="250" text="Title" />
+          <TableColumn fx:id="mod_dt_col" prefWidth="190.0" text="Modification Date" />
+          <TableColumn fx:id="url_col" prefWidth="450.0" text="URL" />
+          <TableColumn fx:id="type_col" prefWidth="150.0" text="Type" />
+        </columns>
+      </TableView>
+      <TextField fx:id="search_value_field" layoutX="15.0" layoutY="20.0" prefHeight="30.0" prefWidth="200.0" styleClass="textfield">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="search_by_choice_box" layoutX="230.0" layoutY="19.0" prefWidth="150.0" />
+      <Label layoutX="450.0" layoutY="24.0" text="Type:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="filter_by_choice_box" layoutX="501.0" layoutY="19.0" prefWidth="150.0" />
+      <Button layoutX="956.0" layoutY="20.0" mnemonicParsing="false" onAction="#search_btn_click" prefHeight="30.0" prefWidth="70.0" styleClass="primary-button" text="Search">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

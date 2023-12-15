@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ShelfInfoPage">
+   <AnchorPane prefHeight="658.0" prefWidth="1038.0">
+    <children>
+        <Label fx:id="msg_label" layoutX="20.0" layoutY="19.0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+         <Button layoutX="519.0" layoutY="10.0" mnemonicParsing="false" onAction="#viewContents_button_onclick" prefHeight="30.0" prefWidth="140.0" styleClass="secondary-button" text="View Contents" />
+         <Button fx:id="bookmark_btn" layoutX="680.0" layoutY="10.0" mnemonicParsing="false" onAction="#bookmarkButtonOnclick" prefHeight="30.0" prefWidth="140.0" styleClass="secondary-button" text="Add Bookmark" />
+         <Button fx:id="delete_btn" disable="true" layoutX="850.0" layoutY="10.0" mnemonicParsing="false" onAction="#deleteButtonOnclick" prefHeight="30.0" prefWidth="70.0" styleClass="danger-button" text="Delete" visible="false" />
+        <Button fx:id="edit_btn" disable="true" layoutX="945.0" layoutY="10.0" mnemonicParsing="false" onAction="#editButtonOnclick" prefHeight="30.0" prefWidth="70.0" styleClass="primary-button" text="Edit" visible="false">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+        <TextField fx:id="title_field" editable="false" layoutX="299.0" layoutY="55.0" prefHeight="35.0" prefWidth="443.0" promptText="Title" styleClass="textfield">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></TextField>
+         <Pane fx:id="add_tag_pane" layoutX="70.0" layoutY="100.0" visible="false">
+            <children>
+              <TextField fx:id="tag_field" layoutY="6.0" prefHeight="35.0" prefWidth="250.0" promptText="Tag (Optional)" styleClass="textfield">
+                  <font>
+                      <Font name="System Bold" size="14.0" />
+                  </font>
+               </TextField>
+              <Button fx:id="add_tag_btn" layoutX="255.0" layoutY="9.0" mnemonicParsing="false" onAction="#addTag" prefHeight="30.0" prefWidth="60.0" styleClass="primary-button" text="Add">
+                  <font>
+                      <Font size="14.0" />
+                  </font>
+              </Button>
+            </children>
+         </Pane>
+         <ScrollPane layoutX="450.0" layoutY="103.0" prefWidth="520.0">
+            <content>
+               <HBox fx:id="tag_list_hbox" spacing="5.0" />
+            </content>
+         </ScrollPane>
+        <Label layoutX="70.0" layoutY="155.0" text="Privacy:">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="privacy_choice_box" disable="true" layoutX="140.0" layoutY="155.0" prefWidth="150.0" />
+         <Pane fx:id="user_permission_pane" layoutX="70.0" layoutY="195.0">
+            <children>
+               <Pane fx:id="add_permission_pane" disable="true" visible="false">
+                  <children>
+                    <TextField fx:id="username_field" layoutY="6.0" prefHeight="35.0" prefWidth="250.0" promptText="Username" styleClass="textfield">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                    </TextField>
+                    <ChoiceBox fx:id="permission_choice_box" layoutX="365.0" layoutY="9.0" prefWidth="150.0" />
+                     <Button layoutX="531.0" layoutY="9.0" mnemonicParsing="false" onAction="#addUser" prefHeight="30.0" prefWidth="60.0" styleClass="primary-button" text="Add" />
+                    <Label layoutX="265.0" layoutY="11.0" text="Permission:">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Label>
+                  </children>
+               </Pane>
+               <ScrollPane layoutY="55.0" prefHeight="175.0" prefWidth="900.0" stylesheets="@/styles/default.css">
+                  <content>
+                     <VBox fx:id="user_list_vbox" disable="true" prefWidth="596.0" />
+                  </content>
+               </ScrollPane>
+            </children>
+         </Pane>
+        <TextArea fx:id="details_area" layoutX="70.0" layoutY="445.0" prefHeight="150.0" prefWidth="900.0" promptText="Details (Optional)">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></TextArea>
+        <Button fx:id="save_btn" layoutX="460.0" layoutY="615.0" mnemonicParsing="false" onAction="#saveShelf" prefHeight="50.0" prefWidth="120.0" styleClass="primary-button" text="Save" visible="false">
+            <font>
+                <Font size="18.0" />
+            </font></Button>
+    </children>
+   </AnchorPane>
+</ScrollPane>

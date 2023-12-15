@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1040.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Dashboard">
+   <children>
+      <TableView fx:id="table" layoutY="60.0" onMouseClicked="#mouse_click_event_handler" prefHeight="600.0" prefWidth="1040.0">
+        <columns>
+          <TableColumn fx:id="title_col" prefWidth="250" text="Title" />
+          <TableColumn fx:id="mod_dt_col" prefWidth="190.0" text="Modification Date" />
+          <TableColumn fx:id="url_col" prefWidth="450.0" text="URL" />
+          <TableColumn fx:id="type_col" prefWidth="150.0" text="Type" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="category_choice_box" layoutX="445.0" layoutY="20.0" prefWidth="150.0" />
+   </children>
+</Pane>
