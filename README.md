@@ -1,4 +1,3 @@
-V
 # Digital Content Organizer
 
 The Digital Content Organizer app is a comprehensive JavaFX application that uses MS SQL Server for database functionality.
