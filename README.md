@@ -11,7 +11,15 @@ In human development, technology combines techniques, devices, and information s
 
 ![App Screenshot](DigitalContentOrganizer/Dashboard.png)
 
+![App Screenshot](DigitalContentOrganizer/Profile.png)
 
+![App Screenshot](DigitalContentOrganizer/discover.png)
+
+![App Screenshot](DigitalContentOrganizer/user_list.png)
+
+![App Screenshot](DigitalContentOrganizer/content_create.png)
+
+![App Screenshot](DigitalContentOrganizer/content_info.png)
 
 
 ## Features
