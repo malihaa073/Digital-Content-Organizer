@@ -18,7 +18,8 @@ User
 - Share contents with other users
 - Bookmark content
 - Report a user
-[Admin]
+ 
+Admin
 - Do all the activities of a user
 - Manage users
 - Manage contents
